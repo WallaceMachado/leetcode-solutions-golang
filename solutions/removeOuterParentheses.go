@@ -52,7 +52,7 @@ s[i] is either '(' or ')'.
 s is a valid parentheses string.
 Accepted
 188,148
-Submissions
+f
 234,941
 */
 
