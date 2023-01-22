@@ -41,7 +41,10 @@ Explanation: The digits are replaced as follows:
 - s[7] -> shift('d',4) = 'h'
 */
 
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 func replaceDigits(s string) string {
 	output := ""
@@ -54,5 +57,28 @@ func replaceDigits(s string) string {
 	if len(s)%2 != 0 {
 		output += string(s[len(s)-1])
 	}
+	values := map[byte]int{
+		'I': 1,
+		'V': 5,
+		'X': 10,
+		'L': 50,
+		'C': 100,
+		'D': 500,
+		'M': 1000,
+	}
+	for i, v := range s {
+		strings.
+		for i, _ := range s {
+			strings.Index()
+			if values[s[i]] < values[s[i+1]] {
+				res += values[s[i+1]] - values[s[i]]
+			} else {
+				res += values[s[i]]
+			}
+			a
+
+		}
+	}
 	return output
+
 }

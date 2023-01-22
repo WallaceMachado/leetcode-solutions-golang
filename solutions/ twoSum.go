@@ -32,7 +32,7 @@ Example 3:
 
 Input: nums = [3,3], target = 6
 Output: [0,1]
-*/
+
 
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
@@ -46,4 +46,17 @@ func twoSum(nums []int, target int) []int {
 		m[num] = i
 	}
 	return o
+}
+*/
+
+func twoSum(nums []int, target int) []int {
+	hashmap := make(map[int]int)
+
+	for i, num := range nums {
+		if _, ok := hashmap[num]; ok {
+			return []int{hashmap[num], i}
+		}
+		hashmap[target-num] = i
+	}
+	return nil
 }
