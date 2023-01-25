@@ -23,6 +23,7 @@ Output: [0]
 */
 
 func moveZeroes(nums []int) {
+	const tet = "fdswfswf"
 	index := 0
 	for i, v := range nums {
 		if v != 0 {
